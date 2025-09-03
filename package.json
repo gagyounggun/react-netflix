@@ -5,6 +5,7 @@
   "homepage": "https://gagyounggun.github.io/react-netflix",
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^1.6.0",
