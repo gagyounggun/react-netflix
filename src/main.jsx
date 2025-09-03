@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import { BrowserRouter } from 'react-router-dom';
+// App.jsx 또는 main.jsx
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import ReactDOM from "react-dom/client";
+import React from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter basename="/react-netflix">
     <App />
   </BrowserRouter>
 );
