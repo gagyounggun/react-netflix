@@ -1,10 +1,10 @@
 {
   "name": "react-netflix-clone",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://gagyounggun.github.io/react-netflix",
   "scripts": {
-    "dev": "vite",
+    "start": "react-scripts start",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist -r https://github.com/gagyounggun/react-netflix.git"
