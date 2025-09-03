@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://gagyounggun.github.io/react-netflix",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-     "deploy": "gh-pages -d dist -r https://github.com/gagyounggun/react-netflix.git"
+      "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist -r https://github.com/gagyounggun/react-netflix.git"
   },
   "dependencies": {
     "axios": "^1.6.0",
