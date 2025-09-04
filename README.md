@@ -1,4 +1,5 @@
-# React + Vite
+# React + Vite 진짜 왜 링크가 안 만들어 질까....
+## https://gagyounggun.github.io/react-netflix
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
