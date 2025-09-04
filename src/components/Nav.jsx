@@ -32,11 +32,13 @@ export default function Nav() {
   return (
     <nav className={`nav ${show && "nav__black"} `}>
       <img
-      alt='Netflix logo'
-      src="https://i.namu.wiki/i/D3xkCENQRUf-rn0_1apxt-OKh8QhHPUSpHIqlP4Qs-nmErlQnxvTK7wyX0ZDuftgvi8Njoh-hwsc9vRuxd1iig.svg"
-      className='nav__logo'
-      onClick={() => window.location.reload()}
-      />
+  alt='Netflix logo'
+  src="https://i.namu.wiki/i/D3xkCENQRUf-rn0_1apxt-OKh8QhHPUSpHIqlP4Qs-nmErlQnxvTK7wyX0ZDuftgvi8Njoh-hwsc9vRuxd1iig.svg"
+  className='nav__logo'
+  onClick={() => navigate("/")}   // 새로고침 대신 메인으로 이동
+  style={{ cursor: "pointer" }}
+/>
+
 
       <input value={searchValue} onChange={handleChange} className='nav__input' name="search"
              type='text' placeholder='영화를 검색해주세요' />
