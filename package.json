@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://gagyounggun.github.io/react-netflix/",
+    "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node build.mjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist --repo https://github.com/gagyounggun/react-netflix.git"

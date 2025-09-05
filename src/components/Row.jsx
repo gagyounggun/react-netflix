@@ -57,17 +57,19 @@ export default function Row({isLargeRow, title, id, fetchUrl}) {
         }}
       >
 
-            <div id={id} className='row__posters'>
-                {movies.map(movie => ( <SwiperSlide>
-                    <img
-                        key={movie.id}
-                        className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                        src={`https://image.tmdb.org/t/p/original/${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
-                        alt={movie.name}
-                        onClick={()=>handleClick(movie)}
-                    /></SwiperSlide>
-                ))}
-                </div>
+<div id={id} className='row__posters'>
+  {movies.map(movie => (
+    <SwiperSlide key={movie.id}>  {/* ← key는 여기 */}
+      <img
+        className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+        src={`https://image.tmdb.org/t/p/original/${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+        alt={movie.name}
+        onClick={() => handleClick(movie)}
+      />
+    </SwiperSlide>
+  ))}
+</div>
+
             </Swiper>
        
 
